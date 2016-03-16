@@ -1,7 +1,7 @@
 {
-  "name": "snaptag-admin",
+  "name": "snapdash",
   "version": "0.0.0",
-  "description": "Snaptag admin",
+  "description": "Snapdash",
   "private": true,
   "directories": {
     "doc": "doc",

@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'snaptag-admin',
+    modulePrefix: 'snapdash',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
