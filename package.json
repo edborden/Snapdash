@@ -1,7 +1,7 @@
 {
-  "name": "admin",
+  "name": "snaptag-admin",
   "version": "0.0.0",
-  "description": "Small description for admin goes here",
+  "description": "Snaptag admin",
   "private": true,
   "directories": {
     "doc": "doc",
