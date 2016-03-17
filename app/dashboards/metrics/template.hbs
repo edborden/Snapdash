@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3>Totals</h3>
+  </div>
+</div>
+
+<div class="row">
+
+  {{#chart-wrapper label="Users" size=2}}
+    {{raw-metric metric=model.users_count}}
+  {{/chart-wrapper}}
+
+  {{#chart-wrapper label="Zones" size=2}}
+    {{raw-metric metric=model.zones_count}}
+  {{/chart-wrapper}}
+
+  {{#chart-wrapper label="Active" size=2}}
+    {{raw-metric metric=model.active_users}}
+  {{/chart-wrapper}}
+
+  {{#chart-wrapper label="Completed Hunts" size=2}}
+    {{raw-metric metric=model.completed_hunts}}
+  {{/chart-wrapper}}
+
+</div>

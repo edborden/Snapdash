@@ -1,20 +1,11 @@
 <div class="row">
-  <div class="col-md-12">
-    <div class="chart-wrapper">
-      <div class="chart-title">Throughput, 12 hours</div>
-      <div class="chart-stage ">
-        {{newrelic-chart src="https://rpm.newrelic.com/public/charts/h4TryqDQu6g"}}
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-12">
-    <div class="chart-wrapper">
-      <div class="chart-title">Throughput, 7 Days</div>
-      <div class="chart-stage ">
-        {{newrelic-chart src="https://rpm.newrelic.com/public/charts/6W3sIHrBLHP"}}
-      </div>
-    </div>
-  </div>
+  {{#chart-wrapper label="Throughput, 12 hours"}}
+    {{newrelic-chart src="https://rpm.newrelic.com/public/charts/h4TryqDQu6g"}}
+  {{/chart-wrapper}}
+
+  {{#chart-wrapper label="Throughput, 7 Days"}}
+    {{newrelic-chart src="https://rpm.newrelic.com/public/charts/6W3sIHrBLHP"}}
+  {{/chart-wrapper}}
 
 </div>
