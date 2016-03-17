@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'snapdash',
     environment: environment,
     baseURL: '/',
-    locationType: 'hash',
+    locationType: 'none',
     apiHostName: 'http://localhost:3000',
     EmberENV: { FEATURES: {} },
     APP: {},
@@ -30,7 +30,7 @@ module.exports = function(environment) {
   if (environment === 'test') {
     // Testem prefers this...
     ENV.baseURL = '/';
-    ENV.locationType = 'hash';
+    ENV.locationType = 'none';
 
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;
