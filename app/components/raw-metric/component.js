@@ -9,7 +9,7 @@ export default Component.extend({
   metric: null,
 
   didInsertElement() {
-    Keen.ready( () => {
+    Keen.ready(() => {
       let chart = new Keen.Dataviz();
       chart.el(this.get('element'));
       chart.prepare();
@@ -17,5 +17,5 @@ export default Component.extend({
       chart.render();
     });
   }
-    
+
 });
