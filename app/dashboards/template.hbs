@@ -1,0 +1,14 @@
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      {{#link-to "index" class="navbar-brand logo"}}Snapdash{{/link-to}}
+    </div>
+    <div class="navbar-right">
+      {{#link-to 'dashboards.metrics' class="btn btn-primary btn-xs navbar-btn"}}Metrics{{/link-to}}
+      {{#link-to 'dashboards.ten' class="btn btn-primary btn-xs navbar-btn"}}Top Ten{{/link-to}}
+      {{#link-to 'dashboards.operations' class="btn btn-primary btn-xs navbar-btn"}}Operations{{/link-to}}
+    </div>
+  </nav>
+
+  {{outlet}}
+</div>
