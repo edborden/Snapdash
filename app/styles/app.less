@@ -1,22 +1,10 @@
 @import "bower_components/bootstrap/less/bootstrap.less";
 @import "bower_components/components-font-awesome/less/font-awesome.less";
+@import "brand";
+@import "colors";
 @import 'nav';
-@import 'spinner';
 @import 'keen';
-
-// COLORS
-
-    @grey: #393939;
-    @orange: #FF5A09;
-    @lgrey:#6E6E6E;
-    @salmon:#F3843E;
-    @yellow:#FF9900;
-
-    @brand-primary: @orange;
-    @brand-warning: @yellow;
-
-    .orange {color:@orange}
-    .yellow {color:@yellow}
+@import "pod-styles";
 
 i {.fa}
 .inline {display:inline-block}
@@ -26,17 +14,6 @@ i {.fa}
     position:absolute;
     left:50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
-}
-
-body {
-    font-size: 16px;
-    font-family: 'Droid Sans', sans-serif;
-    color: white;
-    background-color: @grey;
-}
-
-.hourglass {
-  height:30px
 }
 
 .viz-title {
