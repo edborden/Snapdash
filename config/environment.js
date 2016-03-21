@@ -24,7 +24,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.keenProjectId = '56db25aa90e4bd3adbdeaef5';
-    ENV.keenWriteKey = '7f2867f44b2612d9b6401e1ea809b92bfd08946f8701cecac92f2fbf03829b1e8c64e6743688c32486ad73ca425c97fd8fdb7d0c03f023aed67c8f7c57194538161af612dc088e5cfb5591ca766acc0bdfe7cc19b95d82f467b0e84edd9fd960';
+    ENV.keenReadKey = '4d4040800430dd33fc146334e0c1bf0ddd1216f71412f09f8e282ebe738d9f064b07da535d1cef72c5d9bf2db5285dd47cb346815a75c28fcf63c88d7925f9572290bcfc5731c724cf839cb0aa1c2fb3b70ee47332e2d4b804e4fcadaa7d067f';
   }
 
   if (environment === 'test') {
@@ -44,7 +44,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_TRANSITIONS = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.keenProjectId = '56db1aa2d2eaaa1bfc96deac';
-    ENV.keenWriteKey = 'b764990fc74eccf73c7705cf3b4fb02274e5ac801715abc546c1d534c2d35744a5269746780dda77cc518760ff7910f7588725a9785da2569a3d5aed6772f4ac5316ee0e63d39090718debff3034cb40476b2e171915a94146130f0d50f8aafa';
+    ENV.keenReadKey = '8d55ee908fff7533478117ca50fe9d3328ee40c9a2aacbaf7a93597bb2f90acdc789b13c9135d95d07a9ec11cb27aa482d082078717e19976cddb67f95051335e5628f5a0240ae6008e5a8440fd438216ee488864b75648674e24f4ccb17cbe6';
   }
 
   return ENV;
