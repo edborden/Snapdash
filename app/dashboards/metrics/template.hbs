@@ -3,7 +3,6 @@
     <h3>Totals</h3>
   </div>
 </div>
-
 <div class="row">
 
   {{#chart-wrapper label="Users" size=2}}
@@ -20,6 +19,23 @@
 
   {{#chart-wrapper label="Completed Hunts" size=2}}
     {{raw-metric metric=model.completed_hunts}}
+  {{/chart-wrapper}}
+
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h3>This Week</h3>
+  </div>
+</div>
+<div class="row">
+
+  {{#chart-wrapper label="Visits" size=2}}
+    {{metric-query eventCollection="index" queryType="count"}}
+  {{/chart-wrapper}}
+
+  {{#chart-wrapper label="Signups" size=2}}
+    {{metric-query eventCollection="loginSuccess" queryType="count"}}
   {{/chart-wrapper}}
 
 </div>
