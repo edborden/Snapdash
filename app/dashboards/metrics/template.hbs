@@ -29,7 +29,6 @@
   </div>
 </div>
 <div class="row">
-
   {{#chart-wrapper label="Visits" size=2}}
     {{metric-query eventCollection="index" queryType="count"}}
   {{/chart-wrapper}}
@@ -37,5 +36,15 @@
   {{#chart-wrapper label="Signups" size=2}}
     {{metric-query eventCollection="loginSuccess" queryType="count"}}
   {{/chart-wrapper}}
+</div>
 
+<div class="row">
+  <div class="col-md-12">
+    <h3>This Month</h3>
+  </div>
+</div>
+<div class="row">
+  {{#chart-wrapper label="Organic Funnel"}}
+    {{funnel-analysis labels="Index,Location,Search,LoginInitiated,JoinInitiated" query="organicFunnel"}}
+  {{/chart-wrapper}}
 </div>

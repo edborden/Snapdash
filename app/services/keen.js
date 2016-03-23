@@ -17,6 +17,36 @@ export default Service.extend({
       host: 'api.keen.io/3.0',
       requestType: 'jsonp'
     });
+  },
+
+  @computed
+  organicFunnel() {
+    return new Keen.Query('funnel', {
+      steps: [
+        {
+          eventCollection: 'index',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+        {
+          eventCollection: 'location',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+          eventCollection: 'search',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+          eventCollection: 'loginInitiated',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+          eventCollection: 'joinInitiated',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        }
+      ]
+    });
   }
 
 });
