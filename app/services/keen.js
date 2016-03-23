@@ -29,18 +29,41 @@ export default Service.extend({
           timeframe: 'this_30_days'
         },
         {
+          eventCollection: 'intro1',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+        {
+          eventCollection: 'intro2',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+        {
+          eventCollection: 'intro3',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+        {
           eventCollection: 'location',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
+        {
+          eventCollection: 'geolocationSuccess',
+          actorProperty: 'visitId',
+          timeframe: 'this_30_days'
+        },
+        {
           eventCollection: 'search',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
+        {
           eventCollection: 'loginInitiated',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
+        {
           eventCollection: 'joinInitiated',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
