@@ -29,17 +29,17 @@ export default Service.extend({
           timeframe: 'this_30_days'
         },
         {
-          eventCollection: 'intro1',
+          eventCollection: 'intro.1',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
         {
-          eventCollection: 'intro2',
+          eventCollection: 'intro.2',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
         {
-          eventCollection: 'intro3',
+          eventCollection: 'intro.3',
           actorProperty: 'visitId',
           timeframe: 'this_30_days'
         },
